@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorBackground"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:fontFamily="monospace"
+            android:text="@string/prompt_createAccount"
+            android:textColor="@color/colorButton"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/prompt_email"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="monospace"
+            android:hint="@string/prompt_email"
+            android:shadowColor="#000000"
+            android:textAlignment="center"
+            android:textColor="@color/colorButton"
+            android:textColorHighlight="#000000"
+            android:textColorHint="@color/colorButton" />
+
+        <EditText
+            android:id="@+id/prompt_contact"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="monospace"
+            android:hint="@string/prompt_contact"
+            android:shadowColor="#000000"
+            android:textAlignment="center"
+            android:textColor="@color/colorButton"
+            android:textColorHighlight="#000000"
+            android:textColorHint="@color/colorButton" />
+
+        <EditText
+            android:id="@+id/prompt_password"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="monospace"
+            android:hint="@string/prompt_password"
+            android:shadowColor="#000000"
+            android:textAlignment="center"
+            android:textColor="@color/colorButton"
+            android:textColorHighlight="#000000"
+            android:textColorHint="@color/colorButton" />
+
+        <EditText
+            android:id="@+id/prompt_RetypePass"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="monospace"
+            android:hint="@string/prompt_reTypePass"
+            android:shadowColor="#000000"
+            android:textAlignment="center"
+            android:textColor="@color/colorButton"
+            android:textColorHighlight="#000000"
+            android:textColorHint="@color/colorButton"
+            android:autofillHints="" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="69dp">
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="103dp"
+                android:layout_marginBottom="19dp"
+                android:fontFamily="monospace"
+                android:text="@string/prompt_gender"
+                android:textColor="@color/colorButton"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/genderSelect_spinner"
+                android:layout_width="127dp"
+                android:layout_height="39dp"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="208dp"
+                android:layout_marginBottom="13dp"
+                android:backgroundTint="#19C8FF"
+                android:backgroundTintMode="add"
+                android:foregroundTint="#FFF6F6"
+                android:popupBackground="@color/colorButton" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <Button
+                android:id="@+id/select_date"
+                android:layout_width="35dp"
+                android:layout_height="34dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="right"
+                android:layout_marginEnd="121dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/custom_button"
+                android:onClick="datePicker_clicked"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/birthDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="182dp"
+                android:layout_marginBottom="45dp"
+                android:fontFamily="monospace"
+                android:text="@string/prompt_birthDate"
+                android:textColor="@color/colorButton"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/sign_in"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="20dp"
+
+            android:background="@drawable/custom_button"
+            android:onClick="confirm_clicked"
+            android:text="@string/btn_confirm" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
