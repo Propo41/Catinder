@@ -11,6 +11,7 @@ import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -41,7 +42,14 @@ public class SignUpActivity extends AppCompatActivity implements  AdapterView.On
     }
 
     public void confirm_clicked(View view) {
-        startActivity(new Intent(SignUpActivity.this, Dashboard.class));
+        Toast.makeText(SignUpActivity.this, "Account Created Successfully!" , Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
+        EditText emailView = findViewById(R.id.prompt_email);
+        EditText passView = findViewById(R.id.prompt_password);
+
+        intent.putExtra("email", emailView.getText().toString());
+        intent.putExtra("pass", passView.getText().toString());
+        startActivity(intent);
 
     }
 
@@ -52,7 +60,7 @@ public class SignUpActivity extends AppCompatActivity implements  AdapterView.On
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         String selected = parent.getItemAtPosition(position).toString();
-        Toast.makeText(parent.getContext(),selected , Toast.LENGTH_SHORT).show();
+        //Toast.makeText(parent.getContext(),selected , Toast.LENGTH_SHORT).show();
     }
 
     @Override

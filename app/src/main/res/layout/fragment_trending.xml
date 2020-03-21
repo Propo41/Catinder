@@ -1,5 +1,183 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="142dp"
+        android:layout_height="143dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="88dp"
+        app:srcCompat="@drawable/a" />
+
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="209dp"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Eevee"
+        android:textColor="@color/colorButton"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/gender1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="134dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Female"
+        android:textColor="@color/colorSubheading"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/age1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="211dp"
+        android:layout_marginTop="166dp"
+        android:fontFamily="@font/montserrat"
+        android:text="7 months"
+        android:textColor="@color/colorSubheading"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="157dp"
+        android:layout_height="153dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="229dp"
+        android:layout_marginEnd="32dp"
+        app:srcCompat="@drawable/c" />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Flareon"
+        android:textColor="@color/colorButton"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="287dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Male"
+        android:textColor="@color/colorSubheading"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="321dp"
+        android:fontFamily="@font/montserrat"
+        android:text="7 months"
+        android:textColor="@color/colorSubheading"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="152dp"
+        android:layout_height="170dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="377dp"
+        android:layout_marginEnd="226dp"
+        app:srcCompat="@drawable/e" />
+
+
+    <TextView
+        android:id="@+id/age3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="493dp"
+        android:fontFamily="@font/montserrat"
+        android:text="1 year"
+        android:textColor="@color/colorSubheading"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/name3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="417dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Pikachu"
+        android:textColor="@color/colorButton"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/gender3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="219dp"
+        android:layout_marginTop="457dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Male"
+        android:textColor="@color/colorSubheading"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="29dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Trending cats globally! "
+        android:textColor="@color/colorButton"
+        android:textSize="25dp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

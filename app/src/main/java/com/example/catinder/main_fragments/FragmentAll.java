@@ -14,17 +14,39 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
+
+import com.example.catinder.CatProfile;
+import com.example.catinder.FragmentAllListener;
 import com.example.catinder.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
+
+
+
 public class FragmentAll extends Fragment {
 
     private int[] IMAGES = {R.drawable.a, R.drawable.b, R.drawable.c, R.drawable.d, R.drawable.e, R.drawable.f, R.drawable.g};
-    private String[] NAMES = {"Evee", "Jirachi", "Charmeleon", "Butterfree", "Luna", "Flareon", "Pikachu"};
+    private String[] NAMES = {"Evee", "Jirachi", "Umbreon", "Butterfree", "Luna", "Flareon", "Pikachu"};
     private String[] GENDER = {"Female", "Female", "Male", "Female", "Female", "Female", "Male"};
     private String[] AGE = {"6 months", "1 years", "2 years", "5 months", "8 years", "6 months", "5 years"};
+    private ArrayList<CatProfile> loved;
+    private FragmentAllListener listener;
+
+    public FragmentAll(ArrayList<CatProfile> loved){
+        this.loved = loved;
+    }
+
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        if(context instanceof  FragmentAllListener){
+            listener = (FragmentAllListener) context;
+        }else{
+            throw new RuntimeException(context.toString());
+        }
+    }
 
     @Nullable
     @Override
@@ -32,7 +54,7 @@ public class FragmentAll extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_all, container, false);
         ListView listView = view.findViewById(R.id.list_view);
-        CustomAdapter customAdapter = new CustomAdapter(getActivity(), NAMES, GENDER, AGE, IMAGES);
+        CustomAdapter customAdapter = new CustomAdapter(loved, listener, getActivity(), NAMES, GENDER, AGE, IMAGES);
         listView.setAdapter(customAdapter);
 
        // called only once. Control is given to customAdapter object.
@@ -40,6 +62,11 @@ public class FragmentAll extends Fragment {
         return view;
     }
 
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        listener  = null;
+    }
 }
 
 
@@ -52,22 +79,27 @@ class CustomAdapter extends BaseAdapter {
 
     private static LayoutInflater inflater = null;
     private Context context;
-    private ArrayList<String> catsLoved;
+    private ArrayList<CatProfile> loved;
 
-    CustomAdapter(FragmentActivity activity, String[] NAMES, String[] GENDER, String[] AGE, int[] IMAGES) {
+    private FragmentAllListener listener;
+
+
+
+    CustomAdapter(ArrayList<CatProfile> loved, FragmentAllListener listener, FragmentActivity activity, String[] NAMES, String[] GENDER, String[] AGE, int[] IMAGES) {
         this.GENDER = GENDER;
         this.NAMES = NAMES;
         this.AGE = AGE;
         this.IMAGES = IMAGES;
         context = activity;
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        catsLoved = new ArrayList<String>();
+        this.listener = listener;
+        this.loved = loved;
 
     }
 
 
-    public ArrayList<String> getCatsLoved(){
-        return catsLoved;
+    public ArrayList<CatProfile> getLoved(){
+        return loved;
     }
     @Override
     public int getCount() {
@@ -120,21 +152,26 @@ class CustomAdapter extends BaseAdapter {
             public void onClick(View v) {
 
                 Toast.makeText(context, NAMES[position] + " will be notified of your love", Toast.LENGTH_SHORT).show();
-                catsLoved.add(NAMES[position]);
+                loved.add(new CatProfile(NAMES[position], AGE[position], GENDER[position], IMAGES[position]));
+
+                listener.onCommunicate(loved);
+
             }
         });
 
-        rowView.setOnClickListener(new View.OnClickListener() {
+        /*rowView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                 //Toast.makeText(context, "You Clicked " + NAMES[position], Toast.LENGTH_LONG).show();
             }
-        });
+        });*/
 
         return rowView;
 
     }
+
+
 
 
 }

@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:fontFamily="monospace"
+            android:fontFamily="@font/montserrat"
             android:text="@string/app_name"
             android:textColor="@color/colorButton"
             android:textSize="30sp" />
@@ -45,40 +45,41 @@
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
 
-            android:fontFamily="monospace"
+            android:fontFamily="@font/montserrat"
             android:text="@string/app_slogan"
-            android:textColor="@color/colorButton"
-            android:textSize="20sp" />
+            android:textColor="@color/colorHint"
+            android:textSize="20sp"
+            android:textStyle="normal" />
 
         <EditText
-            android:id="@+id/prompt_email"
+            android:id="@+id/prompt_email_login"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
 
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:fontFamily="monospace"
+            android:fontFamily="@font/montserrat"
             android:hint="@string/prompt_email"
             android:shadowColor="#000000"
             android:textAlignment="center"
-            android:textColor="@color/colorButton"
+            android:textColor="#A1A7AA"
             android:textColorHighlight="#000000"
-            android:textColorHint="@color/colorButton" />
+            android:textColorHint="@color/colorHint" />
 
         <EditText
-            android:id="@+id/prompt_password"
+            android:id="@+id/prompt_password_login"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
 
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
-            android:fontFamily="monospace"
+            android:fontFamily="@font/montserrat"
             android:hint="@string/prompt_password"
             android:shadowColor="#C11010"
             android:textAlignment="center"
             android:textColor="@color/colorButton"
             android:textColorHighlight="#B62323"
-            android:textColorHint="@color/colorButton"
+            android:textColorHint="@color/colorHint"
             android:textColorLink="#BF2626" />
 
         <TextView
@@ -88,7 +89,7 @@
 
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:fontFamily="monospace"
+            android:fontFamily="@font/montserrat"
             android:text="@string/prompt_forgotPassword"
             android:textColor="@color/colorButton"
             android:textSize="15sp" />
@@ -101,15 +102,17 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:background="@drawable/custom_button"
+            android:fontFamily="@font/montserrat"
             android:onClick="signIn_clicked"
-            android:text="@string/btn_signin" />
+            android:text="@string/btn_signin"
+            android:textColor="@color/colorBackground" />
 
         <TextView
             android:id="@+id/prompt_accountCreate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="monospace"
+            android:fontFamily="@font/montserrat"
             android:padding="20dp"
             android:text="@string/prompt_accountCreate"
             android:textColor="@color/colorButton"
@@ -122,7 +125,8 @@
             android:layout_gravity="center"
             android:background="@drawable/custom_button"
             android:onClick="signUp_clicked"
-            android:text="@string/btn_signup" />
+            android:text="@string/btn_signup"
+            android:textColor="@color/colorBackground" />
     </LinearLayout>
 
 </RelativeLayout>

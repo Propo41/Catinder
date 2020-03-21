@@ -25,9 +25,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="80dp"
-            android:fontFamily="monospace"
-            android:text="@string/prompt_createAccount"
+            android:fontFamily="@font/montserrat"
             android:textColor="@color/colorButton"
+
+            android:text="@string/prompt_createAccount"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -37,58 +38,49 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:fontFamily="monospace"
+            android:fontFamily="@font/montserrat"
             android:hint="@string/prompt_email"
             android:shadowColor="#000000"
             android:textAlignment="center"
-            android:textColor="@color/colorButton"
             android:textColorHighlight="#000000"
-            android:textColorHint="@color/colorButton" />
+            android:textColorHint="@color/colorHint" />
 
         <EditText
             android:id="@+id/prompt_contact"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:fontFamily="monospace"
             android:hint="@string/prompt_contact"
             android:shadowColor="#000000"
             android:textAlignment="center"
-            android:textColor="@color/colorButton"
-            android:textColorHighlight="#000000"
-            android:textColorHint="@color/colorButton" />
+            android:fontFamily="@font/montserrat"
+            android:textColorHint="@color/colorHint" />
 
         <EditText
             android:id="@+id/prompt_password"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-
+            android:fontFamily="@font/montserrat"
+            android:textColorHint="@color/colorHint"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:fontFamily="monospace"
             android:hint="@string/prompt_password"
             android:shadowColor="#000000"
             android:textAlignment="center"
-            android:textColor="@color/colorButton"
-            android:textColorHighlight="#000000"
-            android:textColorHint="@color/colorButton" />
+            android:textColorHighlight="#000000" />
 
         <EditText
             android:id="@+id/prompt_RetypePass"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:fontFamily="monospace"
             android:hint="@string/prompt_reTypePass"
             android:shadowColor="#000000"
             android:textAlignment="center"
-            android:textColor="@color/colorButton"
-            android:textColorHighlight="#000000"
-            android:textColorHint="@color/colorButton"
+            android:fontFamily="@font/montserrat"
+            android:textColorHint="@color/colorHint"
             android:autofillHints="" />
 
         <RelativeLayout
@@ -103,7 +95,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="103dp"
                 android:layout_marginBottom="19dp"
-                android:fontFamily="monospace"
+                android:fontFamily="@font/montserrat"
                 android:text="@string/prompt_gender"
                 android:textColor="@color/colorButton"
                 android:textSize="20sp" />
@@ -134,8 +126,8 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:layout_gravity="right"
-                android:layout_marginEnd="121dp"
-                android:layout_marginBottom="40dp"
+                android:layout_marginEnd="149dp"
+                android:layout_marginBottom="36dp"
                 android:background="@drawable/custom_button"
                 android:onClick="datePicker_clicked"
                 android:text="+" />
@@ -146,13 +138,11 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-
-
                 android:layout_alignParentBottom="true"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="182dp"
-                android:layout_marginBottom="45dp"
-                android:fontFamily="monospace"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="204dp"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/montserrat"
                 android:text="@string/prompt_birthDate"
                 android:textColor="@color/colorButton"
                 android:textSize="20sp" />
@@ -163,12 +153,10 @@
             android:id="@+id/sign_in"
             android:layout_width="115dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginTop="70dp"
-            android:layout_marginEnd="20dp"
-
+            android:layout_gravity="center"
             android:background="@drawable/custom_button"
             android:onClick="confirm_clicked"
+            android:fontFamily="@font/montserrat"
             android:text="@string/btn_confirm" />
 
 

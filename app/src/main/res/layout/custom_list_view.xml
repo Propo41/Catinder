@@ -22,6 +22,8 @@
         android:layout_marginStart="163dp"
         android:layout_marginTop="24dp"
         android:text="TextView"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/colorButton"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -32,10 +34,12 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="162dp"
-        android:layout_marginTop="65dp"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/montserrat"
         android:text="TextView"
-        android:textSize="24sp" />
+        android:textColor="@color/colorSubheading"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/age"
@@ -44,10 +48,12 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="165dp"
+        android:layout_marginStart="166dp"
         android:layout_marginTop="108dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/colorSubheading"
         android:text="TextView"
-        android:textSize="24sp" />
+        android:textSize="20sp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/love"
