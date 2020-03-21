@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
-    tools:context=".LoginActivity" >
+    tools:context=".MainActivities.LoginActivity" >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,7 +53,7 @@
 
         <EditText
             android:id="@+id/prompt_email_login"
-            android:layout_width="200dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
 
             android:layout_gravity="center"
@@ -68,16 +68,16 @@
 
         <EditText
             android:id="@+id/prompt_password_login"
-            android:layout_width="200dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-
+            android:inputType="textPassword"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
             android:fontFamily="@font/montserrat"
             android:hint="@string/prompt_password"
             android:shadowColor="#C11010"
             android:textAlignment="center"
-            android:textColor="@color/colorButton"
+            android:textColor="#A1A7AA"
             android:textColorHighlight="#B62323"
             android:textColorHint="@color/colorHint"
             android:textColorLink="#BF2626" />

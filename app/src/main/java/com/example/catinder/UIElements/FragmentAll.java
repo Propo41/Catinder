@@ -1,4 +1,4 @@
-package com.example.catinder.main_fragments;
+package com.example.catinder.UIElements;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -15,9 +15,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
-import com.example.catinder.CatProfile;
-import com.example.catinder.FragmentAllListener;
+import com.example.catinder.Util.CatProfile;
 import com.example.catinder.R;
+import com.example.catinder.Util.FragmentAllListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;

@@ -1,9 +1,7 @@
-package com.example.catinder.main_fragments;
+package com.example.catinder.UIElements;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.res.ColorStateList;
-import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -18,11 +16,10 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 
-import com.example.catinder.CatProfile;
+import com.example.catinder.Util.CatProfile;
 import com.example.catinder.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 

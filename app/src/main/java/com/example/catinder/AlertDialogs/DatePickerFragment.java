@@ -1,4 +1,4 @@
-package com.example.catinder;
+package com.example.catinder.AlertDialogs;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;

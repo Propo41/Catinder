@@ -1,4 +1,4 @@
-package com.example.catinder.main_fragments;
+package com.example.catinder.UIElements;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

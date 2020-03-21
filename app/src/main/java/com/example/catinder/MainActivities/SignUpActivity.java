@@ -1,7 +1,6 @@
-package com.example.catinder;
+package com.example.catinder.MainActivities;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
@@ -14,6 +13,9 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.example.catinder.AlertDialogs.DatePickerFragment;
+import com.example.catinder.R;
 
 import java.text.DateFormat;
 import java.util.Calendar;

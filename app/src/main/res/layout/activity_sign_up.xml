@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity">
+    tools:context=".MainActivities.SignUpActivity">
 
     <LinearLayout
         android:layout_width="409dp"
@@ -34,23 +34,24 @@
 
         <EditText
             android:id="@+id/prompt_email"
-            android:layout_width="201dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="#A1A7AA"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/montserrat"
             android:hint="@string/prompt_email"
-            android:shadowColor="#000000"
             android:textAlignment="center"
             android:textColorHighlight="#000000"
             android:textColorHint="@color/colorHint" />
 
         <EditText
             android:id="@+id/prompt_contact"
-            android:layout_width="200dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
+            android:textColor="#A1A7AA"
             android:hint="@string/prompt_contact"
             android:shadowColor="#000000"
             android:textAlignment="center"
@@ -59,11 +60,13 @@
 
         <EditText
             android:id="@+id/prompt_password"
-            android:layout_width="200dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat"
             android:textColorHint="@color/colorHint"
             android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:textColor="#A1A7AA"
             android:layout_marginTop="10dp"
             android:hint="@string/prompt_password"
             android:shadowColor="#000000"
@@ -72,7 +75,7 @@
 
         <EditText
             android:id="@+id/prompt_RetypePass"
-            android:layout_width="200dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
@@ -80,7 +83,9 @@
             android:shadowColor="#000000"
             android:textAlignment="center"
             android:fontFamily="@font/montserrat"
+            android:textColor="#A1A7AA"
             android:textColorHint="@color/colorHint"
+            android:inputType="textPassword"
             android:autofillHints="" />
 
         <RelativeLayout
@@ -93,8 +98,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="103dp"
-                android:layout_marginBottom="19dp"
+                android:layout_marginStart="105dp"
+                android:layout_marginBottom="18dp"
                 android:fontFamily="@font/montserrat"
                 android:text="@string/prompt_gender"
                 android:textColor="@color/colorButton"
@@ -107,7 +112,7 @@
 
                 android:layout_alignParentStart="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="208dp"
+                android:layout_marginStart="190dp"
                 android:layout_marginBottom="13dp"
                 android:backgroundTint="#19C8FF"
                 android:backgroundTintMode="add"

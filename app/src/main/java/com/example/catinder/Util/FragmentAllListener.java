@@ -1,4 +1,6 @@
-package com.example.catinder;
+package com.example.catinder.Util;
+
+import com.example.catinder.Util.CatProfile;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.example.catinder;
+package com.example.catinder.MainActivities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.catinder.AlertDialogs.IncorrectCredentialsDialog;
+import com.example.catinder.R;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -35,6 +36,7 @@ public class LoginActivity extends AppCompatActivity {
         EditText passView = findViewById(R.id.prompt_password_login);
         String enteredEmail = emailView.getText().toString();
         String enteredPass = passView.getText().toString();
+
         if(enteredEmail.equals(this.email) && enteredPass.equals(this.pass)){
             Toast.makeText(LoginActivity.this, "Signed in successfully" , Toast.LENGTH_SHORT).show();
             startActivity(new Intent(LoginActivity.this, Dashboard.class));
